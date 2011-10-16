@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::FaqsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_faqs_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_faq_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::FaqsController.sortable? and Faq.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Faqs"),
+                 admin_faqs_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Faqs"),
+                 admin_faqs_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @faq.question %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Question</h1>
+    <p>
+      <%=raw @faq.question %>
+    </p>
+  </section>
+  <section>
+    <h1>Answer</h1>
+    <p>
+      <%=raw @faq.answer %>
+    </p>
+  </section>
+  <section>
+    <h1>Priority</h1>
+    <p>
+      <%=raw @faq.priority %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="faqs">
+      <% @faqs.each do |faq| %>
+        <li>
+          <%= link_to faq.question, faq_path(faq) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

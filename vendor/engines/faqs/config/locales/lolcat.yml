@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    faqs:
+      title: Faqs
+  admin:
+    faqs:
+      actions:
+        create_new: CREATE NEW Faq
+        reorder: REORDR Faqs
+        reorder_done: DUN REORDERIN Faqs
+      records:
+        title: Faqs
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Faqs YET. CLICK "CREATE NEW Faq" 2 ADD UR FURST faq.
+      faq:
+        view_live_html: VIEW DIS faq LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS faq
+        delete: REMOOV DIS faq FOREVR
+  faqs:
+    show:
+      other: OTHR Faqs

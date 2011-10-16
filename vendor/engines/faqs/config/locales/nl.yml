@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    faqs:
+      title: Faqs
+  admin:
+    faqs:
+      actions:
+        create_new: Maak een nieuwe Faq
+        reorder: Wijzig de volgorde van de Faqs
+        reorder_done: Klaar met het wijzingen van de volgorde van de Faqs
+      records:
+        title: Faqs
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Faqs. Druk op 'Maak een nieuwe Faq' om de eerste aan te maken.
+      faq:
+        view_live_html: Bekijk deze faq op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze faq
+        delete: Verwijder deze faq voor eeuwig
+  faqs:
+    show:
+      other: Andere Faqs

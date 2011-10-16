@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="faqs">
+    <% @faqs.each do |faq| %>
+      <li>
+        <%= link_to faq.question, faq_path(faq) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

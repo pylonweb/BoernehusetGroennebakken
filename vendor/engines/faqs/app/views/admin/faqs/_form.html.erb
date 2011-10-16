@@ -1,0 +1,29 @@
+<%= form_for [:admin, @faq] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @faq,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :question -%>
+    <%= f.text_field :question, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :answer -%>
+    <%= f.text_field :answer  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :priority -%>
+    <%= f.text_field :priority  -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.faqs.faq'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @faq.question)
+              } %>
+<% end -%>
