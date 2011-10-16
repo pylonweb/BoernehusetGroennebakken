@@ -33,6 +33,10 @@ h1 {
 	padding-top: 10px;
 }
 
+ul {
+	list-style-type: none;
+}
+
 #logo a {
 	text-decoration: none;
 	color: #333;

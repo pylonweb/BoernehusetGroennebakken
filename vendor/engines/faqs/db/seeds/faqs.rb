@@ -9,11 +9,11 @@ end
 
 if defined?(Page)
   page = Page.create(
-    :title => 'Faqs',
-    :link_url => '/faqs',
+    :title => 'FAQ',
+    :link_url => '/faq',
     :deletable => false,
     :position => ((Page.maximum(:position, :conditions => {:parent_id => nil}) || -1)+1),
-    :menu_match => '^/faqs(\/|\/.+?|)$'
+    :menu_match => '^/faq(\/|\/.+?|)$'
   )
   Page.default_parts.each do |default_page_part|
     page.parts.create(:title => default_page_part, :body => nil)
