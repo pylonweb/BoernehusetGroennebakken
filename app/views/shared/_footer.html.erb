@@ -1,4 +1,6 @@
 <p>
   <%= t('.copyright', :year => Time.now.year,
-                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name"),
+											:site_phone => RefinerySetting.find_or_set(:site_phone, "Company Phone"),
+											:site_email => RefinerySetting.find_or_set(:site_email, "Company e-mail")) %>											
 </p>

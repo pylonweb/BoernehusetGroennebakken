@@ -11,17 +11,21 @@
 	display: none;
 }
 
-
 html, body {
 	margin: 0px;
 }
 
 body {
 	background-color: #EFEFCD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #222;
 }
 
 footer {
 	text-align: center;
+	color: #D2D746;
+	font-size: 0.8em;
 }
 
 h1 {
@@ -37,7 +41,22 @@ h1 {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-#page {
+#body_content {
 	background-color: #FFF;
 	padding: 10px;
+}
+
+#front_image {
+	margin: 10px 0 0 0;
+	height: 500px;
+}
+
+#front_image img {
+	width: 100%;
+	height: 100%;
+}
+
+#front_image p {
+	margin: 0px;
+	padding: 0px;
 }

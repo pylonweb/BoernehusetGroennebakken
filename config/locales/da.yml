@@ -1,0 +1,5 @@
+da:
+  refinery:
+    shared:
+      footer:
+        copyright: "DIN MOR @ %{year} %{site_name} %{site_phone} %{site_email}"
