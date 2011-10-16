@@ -5,12 +5,13 @@
         } %>
   
   <div class='field'>
-    <%= f.label :question -%>
+    <%= f.label :question, t('.question') -%>
+
     <%= f.text_field :question, :class => 'larger widest'  -%>
   </div>
   
   <div class='field'>
-    <%= f.label :answer -%>
+    <%= f.label :answer, t('.answer') -%>
     <%= f.text_area :answer, :class => 'widest'  -%>
   </div>
   
