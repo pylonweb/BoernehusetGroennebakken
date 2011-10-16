@@ -1,0 +1,21 @@
+da:
+  plugins:
+    faqs:
+      title: FAQ
+  admin:
+    faqs:
+      actions:
+        create_new: Tilføj nyt spørgsmål
+        reorder: Redigér rækkefølgen af spørgsmål
+        reorder_done: Gem rækkefølgen
+      records:
+        title: Spørgsmål
+        sorry_no_results: Desværre! Der blev ikke fundet nogle spørgsmål.
+        no_items_yet: Der er ingen spørgsmål endnu. Klik på "Tilføj nyt spørgsmål" for at tilføje dit første spørgsmål.
+      faq:
+        view_live_html: Vis dette spørgsmål live <br/><em>(åbner i et nyt vindue)</em>
+        edit: Rediger spørgsmålet
+        delete: Slet spørgsmålet permanent
+  faqs:
+    show:
+      other: Andre spørgsmål

@@ -1,11 +1,17 @@
 <% content_for :body_content_left do %>
+
   <ul id="faqs">
     <% @faqs.each do |faq| %>
-      <li>
-        <%= link_to faq.question, faq_path(faq) %>
+      <li class="faq_question">
+        <%= link_to faq.question, "#", :class => "roll_down_link" %> 
+        <ul class="faq_answer">
+	        <li>
+	        	<%= faq.answer %>
+	      	</li>
+      	</ul>
       </li>
     <% end %>
   </ul>
 <% end %>
 
-<%= render :partial => "/shared/content_page" %>
+<%= render :partial => "/shared/content_page" %> 

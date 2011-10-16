@@ -5,7 +5,7 @@ fr:
         image: image
   plugins:
     faqs:
-      title: Faqs
+      title: FAQ
   admin:
     faqs:
       actions:

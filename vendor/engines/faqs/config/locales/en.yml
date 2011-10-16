@@ -5,21 +5,21 @@ en:
         image: image
   plugins:
     faqs:
-      title: Faqs
+      title: FAQ
   admin:
     faqs:
       actions:
-        create_new: Add New Faq
+        create_new: Add New Question
         reorder: Reorder Faqs
         reorder_done: Done Reordering Faqs
       records:
-        title: Faqs
+        title: FAQ's
         sorry_no_results: Sorry! There are no results found.
-        no_items_yet: There are no Faqs yet. Click "Add New Faq" to add your first faq.
+        no_items_yet: There are no questions yet. Click "Add New Question" to add your first question.
       faq:
         view_live_html: View this faq live <br/><em>(opens in a new window)</em>
-        edit: Edit this faq
-        delete: Remove this faq forever
+        edit: Edit this question
+        delete: Remove this question forever
   faqs:
     show:
-      other: Other Faqs
+      other: Other questions

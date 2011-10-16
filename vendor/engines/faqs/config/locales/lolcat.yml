@@ -5,7 +5,7 @@ lolcat:
         image: IMAGE
   plugins:
     faqs:
-      title: Faqs
+      title: FAQ
   admin:
     faqs:
       actions:

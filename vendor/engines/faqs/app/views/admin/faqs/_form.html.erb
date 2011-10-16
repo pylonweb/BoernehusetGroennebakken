@@ -11,12 +11,7 @@
   
   <div class='field'>
     <%= f.label :answer -%>
-    <%= f.text_field :answer  -%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :priority -%>
-    <%= f.text_field :priority  -%>
+    <%= f.text_area :answer, :class => 'widest'  -%>
   </div>
   
   <%= render :partial => "/shared/admin/form_actions",
