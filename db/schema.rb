@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111007114631) do
+ActiveRecord::Schema.define(:version => 20111016160504) do
+
+  create_table "faqs", :force => true do |t|
+    t.string   "question"
+    t.string   "answer"
+    t.integer  "priority"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "faqs", ["id"], :name => "index_faqs_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
