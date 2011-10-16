@@ -3,6 +3,41 @@
   Formatting applies to all frontend.
 */
 
-li {
-	
+/*
+	HIDE site_bar
+*/
+
+#site_bar {
+	display: none;
+}
+
+
+html, body {
+	margin: 0px;
+}
+
+body {
+	background-color: #EFEFCD;
+}
+
+footer {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #333;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#page {
+	background-color: #FFF;
+	padding: 10px;
 }
