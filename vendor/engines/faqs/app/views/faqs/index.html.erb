@@ -3,7 +3,7 @@
   <ul id="faqs">
     <% @faqs.each do |faq| %>
       <li class="faq_question">
-        <%= link_to faq.question, "#", :class => "roll_down_link" %> 
+        <%= link_to "<span class='arrow'> &#9654; </span> #{faq.question}".html_safe, "#", :class => "roll_down_link" %> 
         <ul class="faq_answer">
 	        <li>
 	        	<%= faq.answer %>
