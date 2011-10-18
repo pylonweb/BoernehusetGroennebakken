@@ -17,9 +17,6 @@ html, body {
 
 body {
 	background-color: #EFEFCD;
-	background-image: url("../images/bg.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 0.9em;
 	color: #222;

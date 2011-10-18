@@ -60,3 +60,4 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 
 gem 'refinerycms-faq', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-page-images', '~> 1.0', :path => 'vendor/engines'

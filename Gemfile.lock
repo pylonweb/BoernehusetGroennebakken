@@ -1,6 +1,12 @@
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-page-images (1.0.4)
+      refinerycms-pages (>= 0.9.9.1)
+
+PATH
+  remote: vendor/engines
+  specs:
     refinerycms-faq (1.0)
 
 GEM
@@ -167,4 +173,5 @@ DEPENDENCIES
   refinerycms (~> 1.0.8)
   refinerycms-faq (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-page-images (~> 1.0)!
   sqlite3
