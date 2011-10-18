@@ -10,7 +10,7 @@ end
 if defined?(Page)
   page = Page.create(
     :title => 'FAQ',
-    :link_url => '/faq',
+    :link_url => '/faqs',
     :deletable => false,
     :position => ((Page.maximum(:position, :conditions => {:parent_id => nil}) || -1)+1),
     :menu_match => '^/faq(\/|\/.+?|)$'
