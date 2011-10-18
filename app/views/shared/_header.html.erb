@@ -1,4 +1,4 @@
-<div id="header_div" style="background-image: url('<%= @page.images.first.url %>');">
+<div id="header_div" style="background-image: url('<%= @page.images.first.url.html_safe unless @page.images.first.nil? %>');" >
 	
 </div>
 <div id='header_title_div'>

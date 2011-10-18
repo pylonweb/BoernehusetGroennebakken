@@ -132,6 +132,12 @@ h1 {
 	background-clip: padding-box;
 }
 
+#header_title_div {
+	position: relative;
+	top: -130px;
+	color: #FFF;
+}
+
 #header_subheader {
 	font-size: 2.7em;
 }
