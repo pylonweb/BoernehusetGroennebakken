@@ -1,7 +1,13 @@
+<div id="header_div" style="background-image: url('<%= @page.images.first.url %>');">
+	
+</div>
+<div id='header_title_div'>
+<span id='header_subheader'>Velkommen til</span>
 <h1 id='logo'>
   <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %>
 </h1>
-<%= image_tag @page.images.first %>
+</div>
+
 <%= render(:partial => "/shared/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
