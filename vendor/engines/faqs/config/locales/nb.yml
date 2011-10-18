@@ -1,6 +1,6 @@
 nb:
   plugins:
-    FAQ:
+    refinery_faq:
       title: FAQ
   admin:
     faqs:

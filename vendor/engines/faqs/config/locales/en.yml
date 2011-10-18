@@ -4,7 +4,7 @@ en:
       image_picker:
         image: image
   plugins:
-    FAQ:
+    refinery_faq:
       title: FAQ
   admin:
     faqs:

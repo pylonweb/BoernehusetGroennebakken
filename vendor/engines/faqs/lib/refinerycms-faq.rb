@@ -1,7 +1,7 @@
 require 'refinerycms-base'
 
 module Refinery
-  module FAQ
+  module Faqs
 
     class << self
       attr_accessor :root
@@ -17,10 +17,10 @@ module Refinery
 
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "FAQ"
+          plugin.name = "refinery_faq"
           plugin.pathname = root
           plugin.url = {:controller => '/admin/faqs', :action => 'index'}
-          plugin.menu_match = /^\/?(admin|refinery)\/?(faqs)?/
+          plugin.menu_match = /(refinery|admin)\/faqs/
           plugin.activity = {
             :class => Faq,
             :title => 'question'

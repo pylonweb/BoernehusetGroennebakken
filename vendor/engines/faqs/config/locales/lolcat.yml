@@ -4,7 +4,7 @@ lolcat:
       image_picker:
         image: IMAGE
   plugins:
-    FAQ:
+    refinery_faq:
       title: FAQ
   admin:
     faqs:
