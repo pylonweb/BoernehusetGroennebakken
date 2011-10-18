@@ -1,6 +1,6 @@
 da:
   plugins:
-    faqs:
+    FAQ:
       title: FAQ
   admin:
     faqs:

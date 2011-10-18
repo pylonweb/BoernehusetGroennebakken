@@ -4,7 +4,7 @@ lolcat:
       image_picker:
         image: IMAGE
   plugins:
-    faqs:
+    FAQ:
       title: FAQ
   admin:
     faqs:

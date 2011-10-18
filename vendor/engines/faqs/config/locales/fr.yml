@@ -4,7 +4,7 @@ fr:
       image_picker:
         image: image
   plugins:
-    faqs:
+    FAQ:
       title: FAQ
   admin:
     faqs:

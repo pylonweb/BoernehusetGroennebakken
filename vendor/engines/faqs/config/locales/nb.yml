@@ -1,6 +1,6 @@
 nb:
   plugins:
-    faqs:
+    FAQ:
       title: FAQ
   admin:
     faqs:

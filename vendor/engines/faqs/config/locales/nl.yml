@@ -1,6 +1,6 @@
 nl:
   plugins:
-    faqs:
+    FAQ:
       title: FAQ
   admin:
     faqs:

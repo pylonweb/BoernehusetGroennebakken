@@ -19,6 +19,8 @@ module Refinery
         Refinery::Plugin.register do |plugin|
           plugin.name = "FAQ"
           plugin.pathname = root
+          plugin.url = {:controller => '/admin/faqs', :action => 'index'}
+          plugin.menu_match = /^\/?(admin|refinery)\/?(faqs)?/
           plugin.activity = {
             :class => Faq,
             :title => 'question'
