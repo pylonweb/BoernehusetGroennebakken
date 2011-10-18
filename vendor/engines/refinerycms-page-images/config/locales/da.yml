@@ -1,0 +1,15 @@
+da:
+  js:
+    admin:
+      page_images:
+        add_caption: Tilføj billedtekst
+        done: Færdig
+  plugins:
+    page_images:
+      title: Side Billeder
+      description: Side Billeder tillader dig at relaterer en eller flere billeder til en hvilken som helst side i Refinery som gør det virkelig let for dig at skabe simple billed gallerier og lightbox stiled popups på front end side visningen.
+  admin:
+    pages:
+      tabs:
+        images_bar:
+          add: Tilføj billed.
