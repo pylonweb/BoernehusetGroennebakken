@@ -1,7 +1,7 @@
 PATH
   remote: vendor/engines
   specs:
-    refinerycms-faqs (1.0)
+    refinerycms-faq (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -165,6 +165,6 @@ PLATFORMS
 DEPENDENCIES
   jquery-rails
   refinerycms (~> 1.0.8)
-  refinerycms-faqs (= 1.0)!
+  refinerycms-faq (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   sqlite3

@@ -1,7 +1,7 @@
 require 'refinerycms-base'
 
 module Refinery
-  module Faqs
+  module FAQ
 
     class << self
       attr_accessor :root
@@ -17,7 +17,7 @@ module Refinery
 
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "faqs"
+          plugin.name = "FAQ"
           plugin.pathname = root
           plugin.activity = {
             :class => Faq,

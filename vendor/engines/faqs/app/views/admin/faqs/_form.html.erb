@@ -12,8 +12,10 @@
   
   <div class='field'>
     <%= f.label :answer, t('.answer') -%>
-    <%= f.text_area :answer, :class => 'widest'  -%>
+    <%= f.text_area :answer, :class => 'wymeditor widest'  -%>
   </div>
+
+
   
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {

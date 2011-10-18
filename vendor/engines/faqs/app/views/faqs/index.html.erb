@@ -6,7 +6,7 @@
         <%= link_to "<span class='arrow'> &#9654; </span> #{faq.question}".html_safe, "#", :class => "roll_down_link" %> 
         <ul class="faq_answer">
 	        <li>
-	        	<%= faq.answer %>
+	        	<%= faq.answer.html_safe %>
 	      	</li>
       	</ul>
       </li>
