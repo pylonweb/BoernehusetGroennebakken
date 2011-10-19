@@ -7,7 +7,6 @@ set :scm, "git"
 set :branch, "deploy"
 set :scm_verbose, true
 set :deploy_via, :remote_cache
-#set :scm_passphrase, "StarCraft"  # The deploy user's password
 set :deploy_to, "/home/#{user}/#{domain}"
 set :use_sudo, false
 set :rvm_type, :user
