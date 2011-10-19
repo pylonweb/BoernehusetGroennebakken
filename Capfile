@@ -3,7 +3,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # Load RVM's capistrano plugin.
 require "rvm/capistrano"
 # Set it to the ruby + gemset of your app, e.g:
-set :rvm_ruby_string, 'ruby-1.9.2-p290@deploy_test'
+set :rvm_ruby_string, 'ruby-1.9.2-p290@BornehusetGronnebakken'
 
 
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
