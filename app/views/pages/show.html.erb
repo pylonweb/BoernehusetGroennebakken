@@ -9,6 +9,6 @@
 		</section>
 	<% end %>
 	<section id="right_contentbar" <%= 'class=two_columns_right' unless @page.root.children.empty? %>>
-		<%= @page.content_for(:body).html_safe %>
+		<%= @page.content_for(:body).html_safe if @page.content_for(:body) %>
 	</section>
 </section>

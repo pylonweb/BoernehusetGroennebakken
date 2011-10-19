@@ -158,8 +158,8 @@ p {
 
 #header_title_div {
 	position: relative;
-	margin-top: -145px;
-	left: 10px;
+	margin-top: -150px;
+	left: 20px;
 	color: #FFF;
   text-shadow: 1px 1px 1px #000; 
 }
@@ -207,7 +207,7 @@ p {
 #menu {
 	height: 48px;
 	width: 1000px;
-	margin-top: -10px;
+	margin-top: -9px;
   background-color: rgba(239, 250, 128, 0.7);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 250, 128, 0.7)), to(rgba(163, 170, 53, 0.8))); 
   background-image: -webkit-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
@@ -230,16 +230,29 @@ p {
 #menu ul {
 	padding: 15px 15px;
 	width: 1000px;
+	text-align: center;
 }
 
 #menu ul a {
 	text-decoration: none;
 	color: #2E3226;
-	font-size: 1.1em;
+	font-size: 1.2em;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+
+}
+
+#menu ul a:hover {
+	color: #246544;
+}
+
+#menu .selected a {
+	color: #246544;
 }
 
 #menu ul li {
 	margin: 0 10px;
+	display: inline-block;
+	float: none;
 }
 
 #page {

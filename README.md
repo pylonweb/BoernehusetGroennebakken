@@ -11,10 +11,8 @@ tapirmoll@gmail.com
 ##Todo
 ###CSS
 * IE Browser support
-* Linje nederst på undersider
 
 ###RAILS
-* Tjek om content_for(:body) eksisterer
 * Undersider skal bruge parent's billede medmindre de har deres eget.
 
 ###GENERELT
