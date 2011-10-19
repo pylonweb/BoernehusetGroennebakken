@@ -26,7 +26,8 @@ footer {
 	text-align: center;
 	color: #949832;
 	font-size: 0.9em;
-  text-shadow: 1px 1px 0px #fff;
+  	text-shadow: 1px 1px 0px #fff;
+
 }
 
 h1 {
@@ -104,7 +105,10 @@ h1 {
 	margin-top: -150px;
 	left: 20px;
 	color: #FFF;
-  text-shadow: 1px 1px 1px #000; 
+  	text-shadow: 1px 1px 1px #000; 
+  	filter: Shadow(Color=#000000, 	
+		Direction=135, 
+		Strength=2);
 }
 
 #header_subheader {
@@ -158,15 +162,23 @@ h1 {
   background-image:     -ms-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)) !important; 
   background-image:      -o-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
   background-image:         linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#EFFA80', EndColorStr='#A3AA35'); 
+   
 	-webkit-border-bottom-left-radius: 8px; 
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-left-radius: 8px;  
 	-moz-border-bottom-right-radius: 8px; 
 	border-bottom-left-radius: 8px;       
-	border-bottom-right-radius: 8px;       
+	border-bottom-right-radius: 8px;     
 	-moz-background-clip: padding; 
 	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;
+}
+
+.ie6 #menu, .ie7 #menu, .ie8 #menu, .ie9 #menu {
+	height: 48px;
+	width: 1000px;
+	margin-top: -9px;
+  	background-image: url("../images/menu_bg.png");
 	background-clip: padding-box;
 }
 
@@ -180,8 +192,7 @@ h1 {
 	text-decoration: none;
 	color: #2E3226;
 	font-size: 1.2em;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
-
+  	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 #menu ul a:hover {

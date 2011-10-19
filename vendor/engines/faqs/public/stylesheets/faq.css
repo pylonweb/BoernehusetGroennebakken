@@ -7,6 +7,7 @@
 
 
 .faq_question {
+	
 	width: 980px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -42,6 +43,7 @@
 .faq_answer{
 	width: 950px;
 	padding: 0px 15px 1px 15px;
+	overflow: hidden;
 }
 
 .faq_answer li{
