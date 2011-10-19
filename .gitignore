@@ -76,6 +76,4 @@ capybara-*html
 .sass-cache/*
 
 #rvm
-.rvmrc
-.rvmrc.*
 
