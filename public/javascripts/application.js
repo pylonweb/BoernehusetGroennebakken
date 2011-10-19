@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 		$(this).children(".faq_answer").first().slideToggle(function(){
 			if ($(this).is(':hidden')){
-				$(this).parents(".faq_question").children("a").first().children("span").first().html("&#9654;");
+				$(this).parents(".faq_question").children("a").first().children("span").first().html("&#9658;");
 			}
 		});
 
