@@ -1,0 +1,14 @@
+<section id="body_content">
+	<% unless @page.root.children.empty? %>
+		<section id="left_sidebar">
+			<%= render(:partial => "/shared/submenu", :locals => {
+			             :dom_id => 'submenu',
+			             :css => 'submenu'
+					           }) 
+			%>
+		</section>
+	<% end %>
+	<section id="right_contentbar" <%= 'class=two_columns_right' unless @page.root.children.empty? %>>
+		<%= @page.content_for(:body).html_safe %>
+	</section>
+</section>

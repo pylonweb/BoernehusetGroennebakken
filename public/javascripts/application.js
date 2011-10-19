@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$(".faq_answer").hide();
+	
+//	$("#left_sidebar").height($("#right_contentbar").height());
 
   $(".faq_question").click(function() {	
   	if ($(this).children(".faq_answer").first().is(':hidden')) {

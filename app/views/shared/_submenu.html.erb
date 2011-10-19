@@ -1,0 +1,9 @@
+
+<%= render :partial => '/shared/menu', 
+	:locals => {
+		:dom_id => 'submenu',
+    :css => 'menu',
+    :roots => @menu_pages.reject{|p| p.parent_id != @page.root.id },
+    :collection => @menu_pages.select{|p| ([p.id] | p.ancestors.map(&:id)).include?(@page.root.id) },
+		:apply_css => true
+} -%>
