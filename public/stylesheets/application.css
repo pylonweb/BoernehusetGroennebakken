@@ -155,10 +155,10 @@ h1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 250, 128, 0.7)), to(rgba(163, 170, 53, 0.8))); 
   background-image: -webkit-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
   background-image:    -moz-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
-  background-image:     -ms-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
+  background-image:     -ms-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)) !important; 
   background-image:      -o-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
   background-image:         linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgba(239, 250, 128, 0.7)', EndColorStr='rgba(163, 170, 53, 0.8)'); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#EFFA80', EndColorStr='#A3AA35'); 
 	-webkit-border-bottom-left-radius: 8px; 
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-left-radius: 8px;  
