@@ -17,7 +17,7 @@ html, body {
 
 body {
 	background-color: #EFEFCD;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 0.9em;
 	color: #222;
 }
@@ -33,6 +33,10 @@ h1 {
 	margin-top: 0px;
 	font-size: 2em;
 	margin-bottom: 10px;
+}
+
+p {
+	
 }
 
 #faqs {
@@ -99,7 +103,7 @@ h1 {
 	color: inherit;
 	font-size: 1.8em;
 	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: inherit;
 }
 
 #body_content {
@@ -168,19 +172,36 @@ h1 {
 	width: 200px;
 	display: inline-block;
 	float: left;
-	padding-top: 74px;
-	padding-left: 10px;
+	padding-top: 84px;
+	padding-left: 20px;
+}
+
+#left_sidebar ul {
+	list-style-image: url('../images/list_style_gray.png');
+}
+
+#left_sidebar .selected {
+	list-style-image: url('../images/list_style_selected.png') !important;
 }
 
 #left_sidebar li {
-	display: block;
 	float: none;
-	margin: 20px 0;
+	padding: 10px 0;
+	margin-left: 5px;
+	list-style: inherit;
+	border-bottom: 1px dotted #666;
+	width: 150px;
 }
 
 #left_sidebar li a {
 	text-decoration: none;
 	color: #585D47;
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+#left_sidebar li a:hover {
+	list-style-image: url('../images/list_style_selected.png') !important;
+	font-weight: bold;
 }
 
 #menu {
@@ -230,10 +251,10 @@ h1 {
 }
 
 .two_columns_right {
-	width: 750px;
+	width: 730px;
 	margin-left: 200px;
 	padding-left: 20px;
 	border-left: 2px solid #C3CA3E;
 	margin-top: 50px;
-	paddingq-bottom: -10px;
+	margin-bottom: 20px;
 }
