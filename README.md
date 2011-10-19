@@ -1,17 +1,21 @@
 # Børnehuset Grønnebakken
 
 ## Kontakt
-Jakob Moll
-tapirmoll@gmail.com
-+45 53 30 43 80
+Jakob Moll     
+tapirmoll@gmail.com     
++45 53 30 43 80     
 
 ##Deadline
 25. Oktober 2011
 
 ##Todo
 ###CSS
-*IE Browser support
-*Linje nederst på undersider
+* IE Browser support
+* Linje nederst på undersider
 
 ###RAILS
-*Tjek om content_for(:body) eksisterer
+* Tjek om content_for(:body) eksisterer
+* Undersider skal bruge parent's billede medmindre de har deres eget.
+
+###GENERELT
+* DIN MOR
