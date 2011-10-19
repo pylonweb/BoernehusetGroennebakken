@@ -159,7 +159,6 @@ h1 {
   background-image:      -o-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
   background-image:         linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#EFFA80', EndColorStr='#A3AA35'); 
-	filter: alpha(opacity=75);
 	-webkit-border-bottom-left-radius: 8px; 
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-left-radius: 8px;  
