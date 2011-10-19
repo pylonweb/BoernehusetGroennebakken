@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.date              = '2011-10-07'
   s.summary           = 'FAQ engine for Refinery CMS'
   s.require_paths     = %w(lib)
-  s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
+  s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*', 'public/**/*']
 end
