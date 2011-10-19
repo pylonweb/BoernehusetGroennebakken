@@ -143,6 +143,15 @@ h1 {
 	font-weight: bold;
 }
 
+.ie6 #menu, .ie7 #menu, .ie8 #menu, .ie9 #menu {
+	height: 48px;
+	width: 1000px;
+	margin-top: -9px;
+  	background-image: url("../images/menu_bg.png");
+	background-clip: padding-box;
+	background-color: none;
+}
+
 #menu {
 	height: 48px;
 	width: 1000px;
@@ -166,13 +175,7 @@ h1 {
 	background-clip: padding-box;
 }
 
-.ie6 #menu, .ie7 #menu, .ie8 #menu, .ie9 #menu {
-	height: 48px;
-	width: 1000px;
-	margin-top: -9px;
-  	background-image: url("../images/menu_bg.png");
-	background-clip: padding-box;
-}
+
 
 #menu ul {
 	padding: 15px 15px;
@@ -221,13 +224,10 @@ h1 {
 table{
 	border-collapse: collapse;
 	width: 100%;
-
-
 }
 
 table caption{
 	font-size: 1.5em;
-
 	padding: 5px;
 }
 
