@@ -12,4 +12,5 @@ da:
     pages:
       tabs:
         images_bar:
-          add: Tilføj billed.
+          add: Tilføj billed
+          change: Skift billed

@@ -18,7 +18,7 @@ module Refinery
       end
       
       def self.register(tab)
-        tab.name = "images"
+        tab.name = "header image"
         tab.partial = "/admin/pages/tabs/images"
       end
 
