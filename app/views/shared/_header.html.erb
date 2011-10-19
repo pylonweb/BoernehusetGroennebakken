@@ -1,4 +1,13 @@
-<div id="header_div" style="background-image: url('<%= @page.images.first.url.html_safe unless @page.images.first.nil? %>');" >
+<% 
+if !@page.images.first.nil? then
+	image = @page.images.first.url.html_safe
+elsif !@page.parent.nil? && !@page.parent.images.first.nil?
+	image = @page.parent.images.first.url.html_safe
+else
+	image = ""
+end %>
+
+<div id="header_div" style="background-image: url('<%= image %>');" >
 	
 </div>
 <div id='header_title_div'>
