@@ -143,42 +143,21 @@ h1 {
 	font-weight: bold;
 }
 
-.ie6 #menu, .ie7 #menu, .ie8 #menu, .ie9 #menu {
-	height: 48px;
+#menu {
+	height: 40px;
 	width: 1000px;
-	margin-top: -9px;
+	margin-top: -1px;
   	background-image: url("../images/menu_bg.png");
 	background-clip: padding-box;
 	background-color: none;
+	background-repeat: no-repeat;
 }
 
-#menu {
-	height: 48px;
-	width: 1000px;
-	margin-top: -9px;
-  background-color: rgba(239, 250, 128, 0.7);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 250, 128, 0.7)), to(rgba(163, 170, 53, 0.8))); 
-  background-image: -webkit-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
-  background-image:    -moz-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
-  background-image:     -ms-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)) !important; 
-  background-image:      -o-linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8)); 
-  background-image:         linear-gradient(top, rgba(239, 250, 128, 0.7), rgba(163, 170, 53, 0.8));
-   
-	-webkit-border-bottom-left-radius: 8px; 
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-left-radius: 8px;  
-	-moz-border-bottom-right-radius: 8px; 
-	border-bottom-left-radius: 8px;       
-	border-bottom-right-radius: 8px;     
-	-moz-background-clip: padding; 
-	-webkit-background-clip: padding-box; 
-	background-clip: padding-box;
-}
 
 
 
 #menu ul {
-	padding: 15px 15px;
+	padding: 10px 15px;
 	width: 1000px;
 	text-align: center;
 }

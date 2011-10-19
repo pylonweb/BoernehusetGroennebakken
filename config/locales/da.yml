@@ -2,4 +2,4 @@ da:
   refinery:
     shared:
       footer:
-        copyright: "DIN MOR @ %{year} %{site_name} %{site_phone} %{site_email}"
+        copyright: "Copyright © %{year} %{company_name} | %{site_address} | %{site_phone} | %{site_email}"
