@@ -43,6 +43,34 @@ h1 {
 }
 
 #body_content {
+	padding: 50px 30px 30px 30px;  
+}
+#body_top, #body_bottom {
+	display: none;
+}
+
+.ie6 #body_top, .ie7 #body_top, .ie8 #body_top {
+	display: block!important;
+	width: 1004px;
+	height: 19px;
+	background-image: url("../images/body_top.png");
+  
+}
+.ie6 #body_middle, .ie7 #body_middle, .ie8 #body_middle {
+	display: block!important;
+	width: 1004px;
+	background-image: url("../images/body_middle.png");
+  
+}
+.ie6 #body_bottom, .ie7 #body_bottom, .ie8 #body_bottom {
+	display: block!important;
+	width: 1004px;
+	height: 19px;
+	background-image: url("../images/body_bottom.png");
+  
+}
+
+#body_content {
 	background-color: #FFF;
 	padding: 50px 30px 30px 30px;
 	-webkit-border-radius: 8px; 
@@ -54,6 +82,7 @@ h1 {
   -webkit-box-shadow: 0px 0px 1px #333; 
   -moz-box-shadow: 0px 0px 1px #333; 
   box-shadow: 0px 0px 1px #333; 
+	background-image: ;
   
 }
 
@@ -145,7 +174,7 @@ h1 {
 	height: 40px;
 	width: 1000px;
 	margin-top: -1px;
-  	background-image: url("../images/menu_bg.png");
+  background-image: url("../images/menu_bg.png");
 	background-clip: padding-box;
 	background-color: none;
 	background-repeat: no-repeat;

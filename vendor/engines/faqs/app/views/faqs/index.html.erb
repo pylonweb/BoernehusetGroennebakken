@@ -1,3 +1,5 @@
+<div id="body_top"></div>
+<div id="body_middle">
 <section id="body_content">
 <%= @page.content_for(:body).html_safe if @page.content_for(:body) %>
 
@@ -15,6 +17,8 @@
 </ul>
 
 </section>
+</div>
+<div id="body_bottom"></div>
 
 <% content_for :stylesheets do %>
   <%= stylesheet_link_tag 'faq' %>
