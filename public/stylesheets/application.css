@@ -181,8 +181,9 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-
-
+.ie6 #menu, .ie7 #menu, .ie8 #menu {
+	background-image: url("../images/menu_bg_ie.png") !important;
+}
 
 #menu ul {
 	padding: 10px 15px;
