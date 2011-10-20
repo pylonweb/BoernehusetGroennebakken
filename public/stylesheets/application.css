@@ -57,8 +57,10 @@ h1 {
   
 }
 .ie6 #body_middle, .ie7 #body_middle, .ie8 #body_middle {
+	padding: 0px 2px;
 	display: block!important;
-	width: 1004px;
+	background-color: none;
+		width: 1000px;
 	background-image: url("../images/body_middle.png");
   
 }
@@ -71,6 +73,7 @@ h1 {
 }
 
 #body_content {
+	width: 940px;
 	background-color: #FFF;
 	padding: 50px 30px 30px 30px;
 	-webkit-border-radius: 8px; 
