@@ -11,7 +11,6 @@ $(document).ready(function() {
 				$(this).parents(".faq_question").children("a").first().children("span").first().html("&#9658;");
 			}
 		});
-
-    
+	return false;
   });
 });
