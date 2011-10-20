@@ -6,7 +6,7 @@ source 'http://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-#gem 'mysql2', '0.2.13'
+gem 'mysql2', '0.2.13'
 gem 'jquery-rails'
 
 # Use unicorn as the web server
