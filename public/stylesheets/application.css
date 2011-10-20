@@ -74,16 +74,14 @@ h1 {
 	background-color: #FFF;
 	padding: 50px 30px 30px 30px;
 	-webkit-border-radius: 8px; 
-  -moz-border-radius: 8px; 
-  border-radius: 8px; 
-  -moz-background-clip: padding; 
+  	-moz-border-radius: 8px; 
+  	border-radius: 8px; 
+  	-moz-background-clip: padding; 
 	-webkit-background-clip: padding-box; 
 	background-clip: padding-box;
-  -webkit-box-shadow: 0px 0px 1px #333; 
-  -moz-box-shadow: 0px 0px 1px #333; 
-  box-shadow: 0px 0px 1px #333; 
-	background-image: ;
-  
+  	-webkit-box-shadow: 0px 0px 1px #333; 
+  	-moz-box-shadow: 0px 0px 1px #333; 
+  	box-shadow: 0px 0px 1px #333;   
 }
 
 #front_image {
