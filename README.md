@@ -10,10 +10,9 @@ tapirmoll@gmail.com
 
 ##Todo
 ###CSS
-* IE Browser support
 
 ###RAILS
-* Undersider skal bruge parent's billede medmindre de har deres eget.
 
 ###GENERELT
-* DIN MOR
+* Billedstørrelser der passer til både sider i fuld bredde og sider med undermenubar
+*
