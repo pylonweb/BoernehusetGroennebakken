@@ -24,44 +24,65 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-end
-
-namespace :deploy do
+  
+  #Create database.yml on the server using local database.yml settings
   namespace :db do
     desc <<-DESC
-      Creates the database.yml configuration file in shared path.
-
-      By default, this task uses a template unless a template \
-      called database.yml.erb is found either is :template_dir \
-      or /config/deploy folders. The default template matches \
-      the template for config/database.yml file shipped with Rails.
-
-      When this recipe is loaded, db:setup is automatically configured \
-      to be invoked after deploy:setup. You can skip this task setting \
-      the variable :skip_db_setup to true. This is especially useful \ 
-      if you are using this recipe in combination with \
-      capistrano-ext/multistaging to avoid multiple db:setup calls \ 
-      when running deploy:setup for all stages one by one.
-    DESC
+          Create database.yml on the remote server based on local database.yml file
+        DESC
     task :setup, :except => { :no_release => true } do
-
       template = File.read("config/database.yml")
       config = ERB.new(template)
-
       run "mkdir -p #{shared_path}/db" 
       run "mkdir -p #{shared_path}/config" 
       put config.result(binding), "#{shared_path}/config/database.yml"
     end
 
+    #Symlink shared/database.yml
     desc <<-DESC
-      [internal] Updates the symlink for database.yml file to the just deployed release.
-    DESC
+          [internal] Updates the symlink for database.yml file to the just deployed release.
+        DESC
     task :symlink, :except => { :no_release => true } do
       run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" 
     end
 
   end
+  
+  desc <<-DESC
+        [internal] Run bundle command on remote server
+      DESC
+  task :bundle, :roles => :app do
+    run "cd #{latest_release} && bundle"
+  end
+  
+  desc <<-DESC
+        Merge master branch into deploy branch and push it
+        
+        Specify another branch with BRANCH={branch}
+    DESC
+  task :merge do
+    if ENV.has_key?('BRANCH')
+      if `git branch` =~ /ENV['BRANCH']/i
+        branch = ENV['BRANCH']
+      else
+        raise ArgumentError, "unknown branch: #{ENV['BRANCH']}"
+      end
+    else
+      branch = "master"
+    end
+    
+    system("git checkout #{branch}")
+    system("git checkout -b temp")
+    system("git merge --strategy=ours deploy")
+    system("git checkout deploy")
+    system("git merge temp")
+    system("git branch -d temp")
+    system("git push")
+    system("git checkout #{branch}")
+  end
 
+  after "deploy:bundle",          "deploy:migrate"
+  after "deploy:update_code",     "deploy:bundle"
   after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
   after "deploy:finalize_update", "deploy:db:symlink"
 end
