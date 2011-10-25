@@ -10,6 +10,8 @@ tapirmoll@gmail.com
 
 ##Todo
 ###CSS
+* Der skal tilføjes lige meget margin i begge sider så siden ikke kan være helt oppe af kanten i den ene side mens der er margin i den anden. Dette gør den f.eks på iphone lige nu.
+* Menuen ligger ca 5px for højt oppe
 
 ###RAILS
 
