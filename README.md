@@ -12,6 +12,7 @@ tapirmoll@gmail.com
 ###CSS
 * Der skal tilføjes lige meget margin i begge sider så siden ikke kan være helt oppe af kanten i den ene side mens der er margin i den anden. Dette gør den f.eks på iphone lige nu.
 * Menuen ligger ca 5px for højt oppe
+* Rette småfejl i i18 translation, f.eks. bug når man logger af. Herunder lave en "oversat" page_part_translation til dansk for alle sider.
 
 ###RAILS
 
