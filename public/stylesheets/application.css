@@ -192,7 +192,7 @@ h1 {
 
 #menu ul {
 	padding: 10px 15px;
-	width: 1000px;
+	width: 970px;
 	text-align: center;
 }
 
@@ -220,6 +220,8 @@ h1 {
 
 #page {
 	margin-top: 20px;
+	width: 1040px;
+	padding-left: 40px;
 }
 
 #right_contentbar {
