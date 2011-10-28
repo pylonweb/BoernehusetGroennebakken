@@ -121,18 +121,19 @@ h1 {
 }
 
 #header_title_div {
-	position: relative;
 	margin-top: -150px;
-	left: 20px;
+	padding-left: 20px;
 	color: #FFF;
   	text-shadow: 1px 1px 1px #000; 
   	filter: Shadow(Color=#000000, 	
 		Direction=135, 
 		Strength=2);
+	height: 105px;
 }
 
 #header_subheader {
 	font-size: 2.7em;
+	height: 45px;
 }
 
 #left_sidebar {
@@ -174,7 +175,7 @@ h1 {
 #menu {
 	height: 40px;
 	width: 1000px;
-	margin-top: -1px;
+	margin-top: 5px;
   background-image: url("/images/menu_bg.png");
 	background-clip: padding-box;
 	background-color: none;
