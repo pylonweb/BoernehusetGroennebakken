@@ -22,6 +22,11 @@ footer {
 
 }
 
+header, #page, footer {
+	width: 1040px;
+	padding-left: 40px;
+}
+
 a {
 	color: #447BD4;
 }
@@ -107,6 +112,7 @@ h1 {
 }
 
 #header_div {
+	width: 1000px;
 	height: 300px;
   -webkit-border-bottom-left-radius: 8px; 
   -webkit-border-bottom-right-radius: 8px;
@@ -220,8 +226,6 @@ h1 {
 
 #page {
 	margin-top: 20px;
-	width: 1040px;
-	padding-left: 40px;
 }
 
 #right_contentbar {
