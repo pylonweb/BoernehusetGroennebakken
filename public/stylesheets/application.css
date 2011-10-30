@@ -9,7 +9,7 @@ html, body {
 
 body {
 	background-color: #EFEFCD;
-	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.0em;
 	color: #222;
 }
@@ -18,7 +18,7 @@ footer {
 	text-align: center;
 	color: #949832;
 	font-size: 0.8em;
-  	text-shadow: 1px 1px 0px #fff;
+  text-shadow: 1px 1px 0px #fff;
 
 }
 
@@ -41,14 +41,13 @@ h1 {
 	margin-top: -10px;
 	padding-top: 0;
 	color: inherit;
-}
-
-#logo a {
-	text-decoration: none;
-	color: inherit;
-	font-size: 1.7em;
+	font-size: 3.5em;
 	font-weight: bold;
 	font-family: inherit;
+}
+
+header a {
+	text-decoration: none;
 }
 
 #body_content {
@@ -174,6 +173,7 @@ h1 {
 #left_sidebar li a {
 	text-decoration: none;
 	color: #585D47;
+	font-size: 0.9em;
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
