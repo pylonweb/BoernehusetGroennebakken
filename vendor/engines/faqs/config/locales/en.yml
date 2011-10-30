@@ -1,8 +1,4 @@
 en:
-  shared:
-    admin:
-      image_picker:
-        image: image
   plugins:
     refinery_faq:
       title: FAQ
@@ -26,3 +22,10 @@ en:
   faqs:
     show:
       other: Other questions
+  activerecord:
+    models:
+      faq: FAQ
+    attributes:
+      faq:
+        question: Question
+        answer: Answer

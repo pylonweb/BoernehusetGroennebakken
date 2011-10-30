@@ -22,3 +22,10 @@ da:
   faqs:
     show:
       other: Andre spørgsmål
+  activerecord:
+    models:
+      faq: FAQ
+    attributes:
+      faq:
+        question: Spørgsmål
+        answer: Svar
