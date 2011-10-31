@@ -77,7 +77,7 @@ namespace :deploy do
     system("git checkout deploy")
     system("git merge temp")
     system("git branch -d temp")
-    system("git push")
+    system("git push origin deploy --force")
     system("git checkout #{branch}")
   end
 
