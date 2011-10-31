@@ -1,9 +1,21 @@
-
-<%= render :partial => '/shared/menu', 
+<%
+  # Collect the root items.
+  # Refinery::Menu is smart enough to remember all of the items in the original collection.
+  if (roots = local_assigns[:roots] || (collection ||= @menu_pages).roots).present?
+		dom_id ||= 'submenu'
+    css = [(css || 'menu'), 'clearfix'].flatten.join(' ')
+    hide_children = RefinerySetting.find_or_set(:menu_hide_children, false) if hide_children.nil?
+%>
+<div id='<%= dom_id %>' class='<%= css %>'>
+  <ul>
+<%= render :partial => '/shared/menu_branch', 
+	:collection => @menu_pages.select{|p| ([p.id] | p.ancestors.map(&:id)).include?(@page.root.id) }, 
+	:roots => @menu_pages.reject{|p| p.parent_id != @page.root.id unless p.id == @page.id || p.id == @page.root.id},
 	:locals => {
-		:dom_id => 'submenu',
-    :css => 'menu',
-    :roots => @menu_pages.reject{|p| p.parent_id != @page.root.id },
-    :collection => @menu_pages.select{|p| ([p.id] | p.ancestors.map(&:id)).include?(@page.root.id) },
-		:apply_css => true
-} -%>
+		:hide_children => hide_children,
+		:apply_css => false,
+		:apply_css_selected => true
+} %>
+  </ul>
+</div>
+<% end -%>

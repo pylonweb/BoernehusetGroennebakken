@@ -173,6 +173,7 @@ PLATFORMS
 
 DEPENDENCIES
   jquery-rails
+  mysql2 (= 0.2.13)
   refinerycms (~> 1.0.8)
   refinerycms-faq (= 1.0)!
   refinerycms-i18n (~> 1.0.0)

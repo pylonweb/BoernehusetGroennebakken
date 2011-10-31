@@ -1,6 +1,10 @@
 <%
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
     css = "class='#{classes.join(' ')}'".html_safe
+	elsif !!local_assigns[:apply_css_selected]
+		classes = []
+		classes << 'selected' if selected_page?(local_assigns[:menu_branch])
+		css = "class='#{classes.join(' ')}'".html_safe
   end
   # dom_id DEPRECATED: REMOVE AT 1.1, serves no purpose same with css attributes 'first' and 'last'
   dom_id = "id='item_#{menu_branch_counter}'".html_safe if menu_branch.parent_id.nil?
