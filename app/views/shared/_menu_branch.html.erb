@@ -10,7 +10,12 @@
   dom_id = "id='item_#{menu_branch_counter}'".html_safe if menu_branch.parent_id.nil?
 -%>
 <li<%= ['', css, dom_id].compact.join(' ').gsub(/\ *$/, '').html_safe %>>
-  <%= link_to menu_branch.title, menu_branch.url -%>
+
+	<% if !!local_assigns[:use_custom_title] && Page.find_by_id(menu_branch.id).custom_title_type == 'text' %>
+  <%= link_to Page.find_by_id(menu_branch.id).custom_title, menu_branch.url %>
+	<% else %>
+	<%= link_to menu_branch.title, menu_branch.url %>
+	<% end %>
   <% if (children = menu_branch.children unless hide_children).present? -%>
     <ul class='clearfix'>
       <%= render :partial => '/shared/menu_branch', :collection => children,
