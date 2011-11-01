@@ -17,9 +17,10 @@ class PagesController < ApplicationController
   #
   def show
     @page = Page.find("#{params[:path]}/#{params[:id]}".split('/').last)
-    
-    if @page.friendly_id_status.name == "faq"
+
+    if @page.friendly_id_status.name =~ /^sp.rgsm.l(svar)?|faq|svar/i
       @faqs = Faq.order('position ASC')
+      return
     elsif @page.try(:live?) || (refinery_user? && current_user.authorized_plugins.include?("refinery_pages"))
       # if the admin wants this to be a "placeholder" page which goes to its first child, go to that instead.
       if @page.skip_to_first_child && (first_live_child = @page.children.order('lft ASC').live.first).present?
