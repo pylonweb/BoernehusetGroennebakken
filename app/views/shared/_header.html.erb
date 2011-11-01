@@ -11,11 +11,9 @@ end %>
 	<div id="header_div" style="background-image: url('<%= image %>');" >
 	</div>
 	<div id='header_title_div'>
-		
-			<div id='header_subheader'><%= "Velkommen til" if @page.attributes["position"] == 0 %></div>
-	<h1 id='logo'>
-	  <%= RefinerySetting.find_or_set(:site_name, "Company Name")%>
-	</h1>
+	<div id='logo'>
+	  <img src='/images/gronnebakkelogo1.png' al='Grønnebakken LOGO' />
+	</div>
 	</div>
 </a>
 <%= render(:partial => "/shared/menu", :locals => {
