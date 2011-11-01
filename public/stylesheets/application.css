@@ -31,6 +31,10 @@ body {
 	margin-right: auto;
 }
 
+#content_push_div {
+	clear: both;
+}
+
 #page_container {
 	position: relative;
 	z-index: 1;

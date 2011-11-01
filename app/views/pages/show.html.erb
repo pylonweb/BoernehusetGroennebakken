@@ -15,9 +15,8 @@
 		<% end %>
 		<section id="right_contentbar" <%= 'class=two_columns_right' unless @page.root.children.empty? %>>
 		<%= @page.content_for(:body).html_safe if @page.content_for(:body) %>
-	
-	</section>
-	
+		</section>
+		<div id="content_push_div"></div>
 </section>
 </div>
 <div id="body_bottom"></div>
