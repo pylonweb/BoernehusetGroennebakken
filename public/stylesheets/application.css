@@ -163,10 +163,6 @@ header a {
 	margin-top: -120px;
 	padding-left: 20px;
 	color: #FFF;
-  	text-shadow: 1px 1px 1px #000; 
-  	filter: Shadow(Color=#000000, 	
-		Direction=135, 
-		Strength=2);
 	height: 75px;
 }
 
