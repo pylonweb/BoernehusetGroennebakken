@@ -31,6 +31,10 @@ body {
 	color: #222;
 }
 
+hr {
+	clear: both;
+}
+
 #content_push_div {
 	clear: both;
 }
