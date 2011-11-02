@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   def show
     @page = Page.find("#{params[:path]}/#{params[:id]}".split('/').last)
 
-    if @page.friendly_id_status.name =~ /^sp.rgsm.l(svar)?|faq|svar/i
+    if @page.friendly_id_status.name =~ /^sp.rgsm.l(svar)?/i
       @faqs = Faq.order('position ASC')
       return
     elsif @page.try(:live?) || (refinery_user? && current_user.authorized_plugins.include?("refinery_pages"))
