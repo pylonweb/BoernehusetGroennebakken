@@ -52,7 +52,7 @@ namespace :deploy do
     desc <<-DESC
           Create newrelic.yml on the remote server based on local newrelic.yml file
         DESC
-    if File.exist? "newrelic.yml"
+    if File.exist? "config/newrelic.yml"
       task :setup, :except => { :no_release => true } do
         template = File.read("config/newrelic.yml")
         config = ERB.new(template)
