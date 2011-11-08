@@ -66,7 +66,7 @@ namespace :deploy do
         run "ln -nfs #{shared_path}/config/newrelic.yml #{release_path}/config/newrelic.yml" 
       end
     else
-      put config.result(binding), "error: newrelic.yml not found!"
+      "error: newrelic.yml not found!"
     end
   end
   
