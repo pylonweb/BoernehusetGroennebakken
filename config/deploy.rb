@@ -46,6 +46,8 @@ namespace :deploy do
       run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" 
     end
   end
+  
+  #Create newrelic.yml on the server using local newrelic.yml settings
   namespace :newrelic do
     desc <<-DESC
           Create newrelic.yml on the remote server based on local newrelic.yml file
@@ -58,7 +60,7 @@ namespace :deploy do
         put config.result(binding), "#{shared_path}/config/newrelic.yml"
       end
   
-      #Symlink shared/database.yml
+      #Symlink shared/newrelic.yml
       desc <<-DESC
             [internal] Updates the symlink for newrelic.yml file to the just deployed release.
           DESC
