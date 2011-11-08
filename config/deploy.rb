@@ -103,7 +103,7 @@ namespace :deploy do
     system("git checkout #{branch}")
   end
 
-  after "deploy:bundle",          "deploy:migrate"
+  #after "deploy:bundle",          "deploy:migrate"
   after "deploy:update_code",     "deploy:bundle"
   after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
   after "deploy:db:setup",        "deploy:newrelic:setup"
