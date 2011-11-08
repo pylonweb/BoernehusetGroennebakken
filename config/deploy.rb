@@ -106,8 +106,7 @@ namespace :deploy do
   end
 
   #after "deploy:bundle",          "deploy:migrate"
-  after "deploy:db:setup",        "deploy:newrelic:setup"
-  after "deploy:update_code",     "deploy:bundle"
+  after "deploy:update_code",     "deploy:bundle",      "deploy:newrelic:setup"
   after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
   after "deploy:finalize_update", "deploy:db:symlink"
 end
