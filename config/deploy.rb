@@ -45,7 +45,29 @@ namespace :deploy do
     task :symlink, :except => { :no_release => true } do
       run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" 
     end
-
+  end
+  namespace :newrelic do
+    desc <<-DESC
+          Create newrelic.yml on the remote server based on local newrelic.yml file
+        DESC
+    if File.exist? "newrelic.yml"
+      task :setup, :except => { :no_release => true } do
+        template = File.read("config/newrelic.yml")
+        config = ERB.new(template)
+        run "mkdir -p #{shared_path}/config" 
+        put config.result(binding), "#{shared_path}/config/newrelic.yml"
+      end
+  
+      #Symlink shared/database.yml
+      desc <<-DESC
+            [internal] Updates the symlink for newrelic.yml file to the just deployed release.
+          DESC
+      task :symlink, :except => { :no_release => true } do
+        run "ln -nfs #{shared_path}/config/newrelic.yml #{release_path}/config/newrelic.yml" 
+      end
+    else
+      put "error: newrelic.yml not found!"
+    end
   end
   
   desc <<-DESC
@@ -84,5 +106,6 @@ namespace :deploy do
   after "deploy:bundle",          "deploy:migrate"
   after "deploy:update_code",     "deploy:bundle"
   after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
+  after "deploy:db:setup",        "deploy:newrelic:setup"
   after "deploy:finalize_update", "deploy:db:symlink"
 end

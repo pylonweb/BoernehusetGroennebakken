@@ -12,6 +12,7 @@ gem 'jquery-rails'
 
 group :production do
 	gem 'mysql2', '0.2.13'
+	gem 'newrelic_rpm'
 end
 
 # Use unicorn as the web server
