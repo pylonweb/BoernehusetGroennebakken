@@ -1,1 +1,1 @@
-rvm --create gemset use BornehusetGronnebakken -default
+rvm --create use ruby-1.9.2-p290@BornehusetGronnebakken

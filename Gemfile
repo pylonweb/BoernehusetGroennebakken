@@ -11,15 +11,15 @@ end
 gem 'jquery-rails'
 
 group :production do
-	gem 'mysql2', '0.2.13'
+	gem 'pg'
 	gem 'newrelic_rpm'
 end
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
@@ -42,6 +42,8 @@ end
 # Anything you put in here will be overridden when the app gets updated.
 
 gem 'refinerycms',              '~> 1.0.8'
+# gem 'whenever'
+gem 'figaro'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'

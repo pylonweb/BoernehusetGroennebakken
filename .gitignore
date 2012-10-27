@@ -78,3 +78,6 @@ capybara-*html
 
 #rvm
 
+
+# Ignore application configuration
+/config/application.yml
