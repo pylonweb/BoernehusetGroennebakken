@@ -11,7 +11,7 @@ namespace :nginx do
 		run "#{sudo} mv /tmp/nginx_conf /etc/nginx/sites-enabled/#{application}"
 		reload
 	end
-	after "deploy:finalize_update", "nginx:update_config"
+	# after "deploy:finalize_update", "nginx:update_config"
 
 	%w[start stop restart reload].each do |command|
 		task command, roles: :web do

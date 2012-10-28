@@ -6,6 +6,7 @@ load "config/recipes/unicorn"
 load "config/recipes/postgresql"
 load "config/recipes/check"
 load "config/recipes/newrelic"
+load "config/recipes/db"
 
 server "server1.pylonweb.dk", :web, :app, :db, primary: true
 
@@ -17,6 +18,8 @@ set :user, 'deployer'
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :rails_env, "production"
+set :taps_port, 5000
 
 set :scm, "git"
 set :repository, "git@github.com:pylonweb/BoernehusetGroennebakken.git"
